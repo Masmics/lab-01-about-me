@@ -1,6 +1,7 @@
 /* exported countPElements */
 /* exported countSectionElements */
 /* exported countInputElements */
+/* exported fireTheseFunctions */
 
 function countPElements() {
     var tags = document.querySelectorAll('p');
@@ -20,4 +21,10 @@ function countInputElements() {
     var countInput = tags.length;
     console.log(tags.length);
     countInputResponse.textContent = 'Input: ' + countInput;
+}
+
+function fireTheseFunctions() {
+    countPElements();
+    countSectionElements();
+    countInputElements();
 }
